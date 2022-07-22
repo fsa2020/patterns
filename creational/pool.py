@@ -1,3 +1,4 @@
+# 对象池可以避免频繁划分内存创建对象
 import queue
 import protoType as pt
 

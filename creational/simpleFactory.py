@@ -1,4 +1,4 @@
-# 简单工厂
+# 简单工厂，避免复杂的类型判断
 class SimpleFactory():
     def __init__(self) -> None:
         self.numDict = {
@@ -7,13 +7,13 @@ class SimpleFactory():
         }
     def getNumToStrDict(self,type):
         return self.numDict[type]
+
 class MyNum():
     def __init__(self,value=1,type="chinese") -> None:
         self.type = type
         self.value = value
         self.factory = SimpleFactory()
     def __str__(self) -> str:
-        # print(self.factory.getNumToStrDict(self.type))
         return self.factory.getNumToStrDict(self.type)[self.value]
  
 if __name__ == "__main__":

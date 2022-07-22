@@ -1,4 +1,4 @@
-# 
+# 按规定顺序创建对象
 # build by step in super __init__
 class builder():
     def __init__(self) -> None:

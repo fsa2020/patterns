@@ -1,4 +1,5 @@
-#use clone function to get instances 
+# 使用clone方法创建新对象
+# use clone function to get instances 
 class ProtoType():
     def __init__(self,**attrs) -> None:
         self.__dict__.update(attrs)

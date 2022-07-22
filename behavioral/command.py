@@ -1,3 +1,4 @@
+# 参数化命令对象,存放队列利于管理，支持撤销
 class Command():
     def execute(self):
         return NotImplementedError

@@ -1,3 +1,4 @@
+# 关系结构为星形,消息发送者和接收者解耦
 class Mediator():
     def __init__(self) -> None:
         self.player = Player(self)
