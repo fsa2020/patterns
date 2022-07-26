@@ -1,3 +1,4 @@
+# 区别于装饰器,在于对修改的函数的使用方法可能会改变
 class Adapter:
     def __init__(self,target,**methods) -> None:
         self.target = target
@@ -13,12 +14,12 @@ class Monster:
         print("oohhhh")
 
 class Npc:
-    def speak(self):
-        print("hello")
+    def speakTo(self,target):
+        print("hello",target)
 
 if __name__ == "__main__":
     m = Monster()
     npc = Npc()
-    npc.speak()
-    crazyNpc = Adapter(npc,speak=m.growl)
-    crazyNpc.speak()
+    npc.speakTo("mike")
+    crazyNpc = Adapter(npc,speakTo=m.growl)
+    crazyNpc.speakTo()
