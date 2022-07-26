@@ -1,4 +1,6 @@
 # 组合>继承 使用 xx has a xx 
+# 当对象具有多维度的可拓展性时
+# 如 Draw ->  shape / element
 class Element:
     def __init__(self,char) -> None:
         self.char = char
